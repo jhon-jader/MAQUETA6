@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color1:#082032;
+    --color2:#2C394B;
+    --color3:#334756;
+    --color4: #FF4C29;
+    --color5: #FDE49C;
+    --color6: white;
+}
+
+.header{
+background-color: var(--color1);
+width: 100%;
+height: 120px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+}
+
+.header__logo{
+    color: var(--color6);
+    
+}
+.lista{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+}
+.lista__elemento{
+width: 100% ;
+}
+.enlace{
+    color: var(--color6);
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    margin-right: 10px;
+}
+.enlace:hover{
+    text-align: center;
+    background-color: var(--color4);
+    border-radius: 5px;
+    height: 22px;
+
+}
+
+.section{
+    width: 95%;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section__article{
+    width: 100%;
+    height: 100%;
+}
+.section__header{
+    width: 100%;
+    background-color: var(--color4);
+    color: var(--color6);
+    margin-top: 20px;
+    margin-bottom: 15px;
+    height: 60px;
+    
+}
+.subtitulo{
+    line-height: 60px;
+    text-align: center;
+}
+
+.parrafo{
+    margin-bottom: 16px;
+    text-align: justify;
+
+}
+
+.footer{
+    background-color: var(--color1);
+    height: 80px;
+}
+.footer__parrafo{
+    color: var(--color6);
+    text-align: center;
+    line-height: 80px;
+}
+
+@media screen and (min-width: 458px) and (max-width:620px){
+    .section{
+        width: 88%;
+    } 
+    .parrafo{
+        margin-bottom: 20px;
+    
+    }
+
+}
+@media screen and (min-width: 621px) and (max-width:970px){
+    .section{
+        width: 80%;
+    } 
+    .parrafo{
+        margin-bottom: 25px;
+        line-height: 28px;
+    
+    }
+
+}
+@media screen and (min-width: 971px){
+    .header{
+        height: 180px;
+        font-size: 24px;
+    }
+    .enlace:hover{
+        height: 32px;
+    }
+
+    .section{
+        width: 70%;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    } 
+    .parrafo{
+        margin-bottom: 25px;
+        line-height: 35px;
+        font-size: 20px;
+    
+    }
+    .footer{
+        height: 150px;
+    }
+    .footer__parrafo{
+        font-size: 24px;
+        line-height: 150px;
+        font-weight: bold;
+    }
+
+}
+
